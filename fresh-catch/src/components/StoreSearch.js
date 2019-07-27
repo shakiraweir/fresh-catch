@@ -1,16 +1,16 @@
 import React from 'react';
-import { render } from 'react-dom';
 
 class StoreSearch extends React.Component {
     render() {
         return (
-            <React.Fragment>
                 <form className='store-selector'>
                     <h2>Search stores for pickup</h2>
-                    <input type='text' required placeholder='Store Name' />
-                    <button type='submit'>See today's selection</button>
+                    <input 
+                        type='text' 
+                        required placeholder='Search by city, state, or zipcode' 
+                    />
+                    <button type='submit'>Search</button>
                 </form>
-            </React.Fragment>
         )
     }
 }
